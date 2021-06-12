@@ -1,0 +1,53 @@
+<div class="container">
+    <p>Lista de Equipos</p>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let equipo of ListarEquipo">
+            <th >{{equipo.id}}</th>
+            <td>{{equipo.nombre}}</td>
+          </tr>
+        </tbody>
+    </table>
+    <button routerLink="/add" type="button" class="btn btn-success">Agregar Equipo</button>
+</div>
+
+<div class="container">
+  <br>
+  
+  <p>Tabla de Posiciones</p>
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">PJ</th>
+          <th scope="col">PG</th>
+          <th scope="col">PE</th>
+          <th scope="col">PP</th>
+          <th scope="col">GF</th>
+          <th scope="col">GC</th>
+          <th scope="col">Puntos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let equipo of ListarEquipoOrdenado">
+          <th >{{equipo.id}}</th>
+          <td>{{equipo.nombre}}</td>
+          <th >{{equipo.partidos_jugados}}</th>
+          <td>{{equipo.partidos_ganados}}</td>
+          <th >{{equipo.partidos_empatados}}</th>
+          <td>{{equipo.partidos_perdidos}}</td>
+          <th >{{equipo.goles_favor}}</th>
+          <td>{{equipo.goles_contra}}</td>
+          <th >{{equipo.puntos}}</th>
+        </tr>
+      </tbody>
+  </table>
+  <button routerLink="/addPartido" type="button" class="btn btn-success">Agregar Partido</button> 
+</div>

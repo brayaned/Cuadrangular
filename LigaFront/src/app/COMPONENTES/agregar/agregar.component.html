@@ -1,0 +1,19 @@
+<div class="container">
+    <p>Agregar Equipo</p>
+    <div class="row">
+        <div class="col-sm-6">
+            <form>
+                <label class="form-label">Nombre del Equipo:</label>
+                <input [(ngModel)]="equipo.nombre" type="text" class="form-control" name="nombre"> <br>
+                <button (click)="agregar()" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <form>
+                <label class="form-label">{{equipo.nombre}}</label>
+            </form>
+        </div>
+    </div>
+    
+
+</div>

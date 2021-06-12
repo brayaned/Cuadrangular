@@ -1,0 +1,25 @@
+<div class="container">
+    <h3>Agregar Partido</h3>
+    <div class="row">
+        <form>
+            <div class="mb3">
+                <label class="form-label">Id del equipo 1:</label>
+                <input [(ngModel)]="partido.id_1" type="text" class="form-control" name="id_1"> <br>
+            </div>
+            <div>
+                <label class="form-label">Goles equipo 1</label>
+                <input [(ngModel)]="partido.goles_id_1" type="text" class="form-control" name="goles_id_1"> <br>
+            </div>
+            <div class="mb3">
+                <label class="form-label">Id del equipo 2:</label>
+                <input [(ngModel)]="partido.id_2" type="text" class="form-control" name="id_2"> <br>
+            </div>
+            <div>
+                <label class="form-label">Goles equipo 2</label>
+                <input [(ngModel)]="partido.goles_id_2" type="text" class="form-control" name="goles_id_2"> <br>
+            </div>
+            <button (click)="agregarPartido()" class="btn btn-primary">Agregar Partido</button>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+create database if not exists liga;
+use liga;
+
+create table equipo(
+	id int not null primary key auto_increment,
+    nombre varchar(50) ,
+	partidos_jugados int  not null,
+	partidos_ganados int  not null,
+    partidos_empatados int  not null,
+    partidos_perdidos int  not null,
+    goles_favor int  not null,
+    goles_contra int  not null, 
+    puntos int  not null
+);
+
+insert into equipo (nombre) values ('Millonarios');
+
+drop table equipo;
+select * from equipo;
