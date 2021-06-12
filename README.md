@@ -2,7 +2,7 @@
 
 Ejercicio de un cuadrangular o liga en el que se agregan equipos. Hay enfrentamientos entre estos equipos y esto genera una tabla de posiciones.
 
-##Ejecución
+## Ejecución
 
 Para ejecutar hay que seguir los siguientes pasos
 
@@ -14,7 +14,7 @@ Para ejecutar hay que seguir los siguientes pasos
 
 - Escribir en el navegador localhost:4200
 
-##Tecnologías 
+## Tecnologías 
 
 - NodeJS
 - Angular
